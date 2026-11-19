@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "primitive-ships",
+  "dir": "ships",
+  "name": "Primitive Ships",
+  "subtitle": "A fleet game for one or two",
+  "developer": {
+    "name": "Primitive AI"
+  },
+  "categories": [
+    "games"
+  ],
+  "description": "Place your fleet by hand or shuffle it into position. Find the other ships on an eight-by-eight map, against the Kindle at three levels or with a second player.",
+  "repo": "https://github.com/DoanNguyenTrong/kindle-primitive-ships",
+  "licence": "PolyForm-Noncommercial-1.0.0",
+  "source": "hosted",
+  "icon": "icon.png",
+  "changes": {
+    "network": false,
+    "stops_kindle_ui": false,
+    "starts_at_boot": false,
+    "root_filesystem": false,
+    "hooks": false
+  },
+  "versions": []
+}
