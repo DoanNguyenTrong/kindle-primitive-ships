@@ -1,6 +1,6 @@
 <div align="center">
 
-# Primitive Ships
+# Ships
 
 **Find the opposing fleet on an eight-by-eight map.**
 
@@ -34,7 +34,7 @@ Set out four ships and take turns looking for the opposing fleet. Play against t
 
 1. Find the local ARMHF package and USB installation steps in the [install guide](INSTALL.md).
 2. Extract the package, copy the `ships` and `documents` folders to your jailbroken Kindle’s user storage, and eject it.
-3. Open Primitive Ships from Primitive Launcher. **Done** returns to the launcher grid.
+3. Open Ships from Primitive Launcher. **Done** returns to the launcher grid.
 
 The local `app.json` is a listing draft. A public listing requires approved artwork and an asset from a published release.
 

@@ -1,9 +1,9 @@
-# Install Primitive Ships
+# Install Ships
 
-When available in Primitive Store, open the listing and choose Get. Open Primitive Ships from the launcher grid.
+When available in Primitive Store, open the listing and choose Get. Open Ships from the launcher grid.
 
 For a local USB test, extract the package for your Kindle, copy the `ships` and `documents` folders to user storage,
-eject, and open Primitive Ships from Primitive Launcher. The app uses the launcher's fonts. The Done button returns you
+eject, and open Ships from Primitive Launcher. The app uses the launcher's fonts. The Done button returns you
 to the launcher.
 
 ## Build a local package

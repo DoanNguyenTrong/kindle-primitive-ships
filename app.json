@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "primitive-ships",
   "dir": "ships",
-  "name": "Primitive Ships",
+  "name": "Ships",
   "subtitle": "A fleet game for one or two",
   "developer": {
     "name": "Primitive AI"
