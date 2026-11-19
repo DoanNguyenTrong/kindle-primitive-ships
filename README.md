@@ -47,7 +47,10 @@ cargo test --offline --locked --workspace
 cargo run --offline --locked -p ships-desktop
 ```
 
-The desktop target writes previews to `build/previews/`. The desktop simulation exercises fleet placement, targeting, and the two-player handoff. Physical Kindle testing is pending. See the [device notes](docs/device-notes.md) for the verification checklist.
+The desktop target writes previews to `build/previews/`. The desktop simulation exercises fleet placement, targeting, and the two-player handoff.
+On an ARMHF Kindle Oasis 3 running firmware 5.18.2, Ships opened the mode selector, started an Easy solo game,
+switched fleet placement from Across to Down and back, and returned to Launcher. See the [device
+notes](docs/device-notes.md) for the verification checklist.
 
 ## Licence
 
