@@ -89,13 +89,20 @@ impl View {
                 CAPTION.center(),
             );
         }
+        let can_place = !self.confirm
+            && matches!(game.stage, Stage::Setup(_))
+            && game.setup_count() < FLEET.len();
+        let can_fire = !self.confirm && matches!(game.stage, Stage::Battle(_)) && !self.own;
         for y in 0..SIZE {
             for x in 0..SIZE {
                 let w = board.w / SIZE as i32;
                 let h = board.h / SIZE as i32;
                 let bounds = Rect::new(board.x + x as i32 * w, board.y + y as i32 * h, w, h);
-                canvas.fill(bounds.inset(1), 242);
-                match game.visible(x, y, self.own) {
+                let mark = game.visible(x, y, self.own);
+                let pressed = (can_place || can_fire && matches!(mark, Mark::Unknown))
+                    && canvas.control_pressed(bounds, false);
+                canvas.fill(bounds.inset(1), if pressed { BLACK } else { 242 });
+                match mark {
                     Mark::Unknown => {}
                     Mark::Ship => canvas.panel(bounds.inset(canvas.px(9)), 14, 2, 85),
                     Mark::Miss => canvas.circle(bounds.inset(canvas.px(41)), 60),
