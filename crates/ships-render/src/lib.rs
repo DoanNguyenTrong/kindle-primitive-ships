@@ -352,7 +352,7 @@ impl View {
 impl App for View {
     fn draw(&self, canvas: &mut Canvas) {
         let width = canvas.bounds().w;
-        header(canvas, "Ships", "Done");
+        header(canvas, "Ships", "Exit");
         match &self.game {
             None => self.draw_modes(canvas, width),
             Some(game) => {
