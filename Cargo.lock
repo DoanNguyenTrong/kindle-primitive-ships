@@ -882,14 +882,14 @@ dependencies = [
 
 [[package]]
 name = "ships-core"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "serde",
 ]
 
 [[package]]
 name = "ships-desktop"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "primitive-app",
  "primitive-ui",
@@ -899,7 +899,7 @@ dependencies = [
 
 [[package]]
 name = "ships-kindle"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "primitive-app",
  "ships-core",
@@ -908,7 +908,7 @@ dependencies = [
 
 [[package]]
 name = "ships-render"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "primitive-app",
  "primitive-ui",
